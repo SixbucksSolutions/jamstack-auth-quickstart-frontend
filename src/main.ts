@@ -45,6 +45,7 @@ const render = async (user) => {
 };
 
 const kinde = await createKindeClient({
+  audience: import.meta.env.VITE_KINDE_TOKEN_AUDIENCE,
   client_id: import.meta.env.VITE_KINDE_CLIENT_ID,
   domain: import.meta.env.VITE_KINDE_DOMAIN,
   redirect_uri: import.meta.env.VITE_KINDE_REDIRECT_URL,
